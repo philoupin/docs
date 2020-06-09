@@ -305,7 +305,11 @@ class mymoduledisplayModuleFrontController extends ModuleFrontController
 - *display.tpl*
 
 ```
-Welcome to my shop!
+{extends file='page.tpl'} <!-- IF YOU WANT USE MAIN TEMPLATE HEADER AND FOOTER -->
+  {block name="page_content"}
+    <!-- YOUR HTML STARTS HERE -->
+    Welcome to my shop!
+  {/block}
 ```
 
 Let's explore `display.php`, our first PrestaShop front-end controller,
